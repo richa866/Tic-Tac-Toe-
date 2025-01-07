@@ -1,0 +1,106 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #240046;
+}
+.wrapper{
+    display: grid;
+    gap: 1rem;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ff9500;
+    font-size: 1.9rem;
+    font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.gameContainer{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+}
+.box{
+    border: 3px solid white;
+    border-radius: 1rem;
+    background-color:transparent;
+    color: white;
+    font-size: 5rem;
+}
+
+
+.box:hover{
+border: 6px solid rgba(33, 220, 12, 0.957);
+}
+.modal{
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+    z-index: 1;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: #7a2cbff8;
+    border-radius: 1rem;
+    display: none;
+}
+.modalMessage{
+    display: grid;
+}
+.winner{
+    text-align: center;
+    color:#fffb00;
+    font-size: 2rem;
+    font-family: "Jost", serif;
+  font-weight: 700;
+  font-style: normal;   
+}
+.modalMessage h2{
+    text-align: center;
+    color:white ;
+    font-size: 1.7rem;
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;  
+}
+
+
+.modalChoice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resetGame{
+    padding: 1rem;
+    width: 30%;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: #ff9500;
+    font-size: 1.3rem;
+}
+.resetGame:hover{
+    border: 5px solid rgba(33, 220, 12, 0.957);}
+.no{
+color: #ff9500;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+.no:hover{
+    border: 5px solid rgba(33, 220, 12, 0.957);}
